@@ -4,3 +4,4 @@ def null_counts(df):
 def train_test_split(df, frac):
     cutoff = round(len(df) * frac)
     return df[:cutoff], df[cutoff:]
+    
