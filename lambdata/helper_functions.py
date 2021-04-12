@@ -7,4 +7,13 @@ class MyDF(pd.DataFrame):
     def train_test_split(df, frac):
         cutoff = round(len(df) * frac)
         return df[:cutoff], df[cutoff:]
-    
+
+def null_counts(df):
+        return df.isnull().sum().sum()
+
+def train_test_split(df, frac):
+        cutoff = round(len(df) * frac)
+        return df[:cutoff], df[cutoff:]
+
+def add_one(num):
+    return num + 1

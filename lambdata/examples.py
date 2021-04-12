@@ -34,8 +34,8 @@ class Complex:
 
 class Social:
     def __init__(self, name, location, upvotes=0):
-        self.name = name
-        self.location = location
+        self.name = str(name)
+        self.location = str(location)
         self.upvotes = upvotes
 
     def recieve_upvotes(self, nun_upvotes):
